@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import django_heroku
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# Build paths inside the project like thiimport django_heroku
+s: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -144,9 +145,9 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+BASE_DIR1 = 'https://swdjango.herokuapp.com/'
 if DEBUG:
     MEDIA_URL = '/media/'
-    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "swDjango", "static", "static-only")
-    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"swDjango","static", "Media")
-    STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR),"swDjango","static", "static"),)
+    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR1), "swDjango", "static", "static-only")
+    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR1),"swDjango","static", "Media")
+    STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR1),"swDjango","static", "static"),)
