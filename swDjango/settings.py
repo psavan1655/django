@@ -146,8 +146,7 @@ django_heroku.settings(locals())
 
 STATIC_URL = '/static/'
 BASE_DIR1 = 'https://swdjango.herokuapp.com/'
-if DEBUG:
-    MEDIA_URL = '/media/'
-    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR1), "swDjango", "static", "static-only")
-    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR1),"swDjango","static", "Media")
-    STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR1),"swDjango","static", "static"),)
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR1), "swDjango", "static", "static-only")
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR1),"swDjango","static", "Media")
+STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR1),"swDjango","static", "static"),)
