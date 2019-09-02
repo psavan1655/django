@@ -10,12 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
-import django_heroku
 import os
+import django_heroku
 
 # Build paths inside the project like thiimport django_heroku
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-s: os.path.join(BASE_DIR, ...)
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,13 +24,12 @@ s: os.path.join(BASE_DIR, ...)
 SECRET_KEY = 'kwal6tpa4^esu1=u76=z)xq6*fwd!@w(2gnyu0@-l-1x+(e$zj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -145,7 +143,6 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# BASE_DIR1 = 'https://swdjango.herokuapp.com/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "swDjango", "static", "static-only")
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"swDjango","static", "Media")
